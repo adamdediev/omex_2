@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Omex</title>
+    <meta name="description" content="Авто в лизинг для физических лиц ">
+    <link rel="stylesheet" href="./aseet/normalize.css">
+    <link rel="stylesheet" href="./aseet/stylesheet.css">
+    <link rel="stylesheet" href="./aseet/style.css">
+    <link rel="stylesheet" href="./aseet/adaptiv.css">
+    
+</head>
+<body>
+    <header>
+      <div class="container">
+        <div class="header">
+    <div class="header_logo"><img class="logo1" data-src="/aseet/img/logo.png" alt="#"><hr><span>лизинговая компания</span><img class="logo2" src="/aseet/img/logo2.png" alt=""></div>
+    <div class="header_menu">
+        <nav class="menu">
+            <ul class="menu_item">
+              <li class="menu_link active">
+                <a target="_blank" href="#">Лизинг</a>
+                <ul>
+                  <li><a target="_blank" href="#">Для личного пользования</a></li>
+                  <li><a target="_blank" href="#">Для юридических диц</a></li>
+                  <li><a target="_blank" href="#">Калькулятор</a></li>
+                </ul>
+              </li>
+              <li class="menu_link"><a target="_blank" href="#">Каталог</a></li>
+              <li class="menu_link"><a target="_blank" href="#">О нас</a></li>
+            </ul>
+          </nav>
+          <button onclick="btn()" class="btn btn_header">Оставить заявку</button>
+    </div>
+    <div onclick="opeen()" class="burger"><img data-src="/aseet/img/burger.png" alt=""></div>
+    <div onclick="opeen()" class="burger2"><img data-src="./aseet/img/berger2.png" alt=""></div>
+        </div>
+      </div>
+    </header>
+<main>
+    <div class="container main"> 
+      <div class="slider-container">
+        <div class="slider-images">
+          <div class="slider-image active" data-slide="1">
+            <div class="background">
+              <h1>Авто в лизинг для физических лиц </h1>
+            <p>Получите машину за 5 дней</p>
+            <button onclick="btn()" class="main_btn btn">Оставить заявку</button>
+            </div>
+            <img data-src="/aseet/img/С ФОНОМ.jpg">
+          </div>
+          <div class="slider-image" data-slide="2">
+            <div class="background">
+              <span>Авто в лизинг для физических лиц </span>
+            <p>Получите машину за 4 дней</p>
+            <button onclick="btn()" class="main_btn btn">Оставить заявку</button>
+            </div>
+            <img data-src="/aseet/img/С ФОНОМ.jpg">
+          </div>
+          <div class="slider-image" data-slide="3">
+            <div class="background">
+              <span>Авто в лизинг для физических лиц </span>
+            <p>Получите машину за 3 дней</p>
+            <button onclick="btn()" class="main_btn btn">Оставить заявку</button>
+            </div>
+            <img data-src="/aseet/img/С ФОНОМ.jpg">
+          </div>
+          <div class="slider-image" data-slide="4">
+            <div class="background">
+              <span>Авто в лизинг для физических лиц </span>
+            <p>Получите машину за 2 дней</p>
+            <button onclick="btn()" class="main_btn btn">Оставить заявку</button>
+            </div>
+            <img data-src="/aseet/img/С ФОНОМ.jpg">
+          </div>
+          <div class="slider-image" data-slide="5">
+            <div class="background">
+              <span>Авто в лизинг для физических лиц </span>
+            <p>Получите машину за 1 дней</p>
+            <button onclick="btn()" class="main_btn btn">Оставить заявку</button>
+            </div>
+            <img data-src="/aseet/img/С ФОНОМ.jpg">
+          </div>
+          <div class="slider-image" data-slide="6">
+            <div class="background">
+              <span>Авто в лизинг для физических лиц</span>
+            <p>Получите машину за 1,5 дней</p>
+            <button onclick="btn()" class="main_btn btn">Оставить заявку</button>
+            </div>
+            <img data-src="/aseet/img/С ФОНОМ.jpg">
+          </div>
+        </div>
+       
+        <div class="slider-dots">
+          <span class="slider-dot active" data-slide="1"></span>
+          <span class="slider-dot" data-slide="2"></span>
+          <span class="slider-dot" data-slide="3"></span>
+          <span class="slider-dot" data-slide="4"></span>
+          <span class="slider-dot" data-slide="5"></span>
+          <span class="slider-dot" data-slide="6"></span>
+
+        </div>
+        <div class="slider-controls">
+          <span class="slider-prev"><img data-src="/aseet/img/back.png" alt=""></span>
+          <span class="slider-next"><img data-src="/aseet/img/next.png" alt=""></span>  
+        </div>
+      </div>
+
+    </div>
+</main>
+<section class="container">
+   <div class="section_title"><strong>Рассчитайте стоимость<br> автомобиля в лизинг</strong></div>
+  <form>
+    <div class="form-group">
+      <label for="carPriceSlider">Стоимость автомобиля</label>
+      <div class="input-group">
+        <div class="price_box"><div id="carPriceValue" class="value">1000000</div><span> &#8381;</span></div> 
+        <input type="range" min="1000000" max="6000000" step="10000" value="1000000" class="slider" id="carPriceSlider">
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="downPaymentSlider">Первоначальный взнос</label>
+      <div class="input-group">
+        <div class="input_start_price"> <div class="price_velue"><div id="initialPaymentValue" class="value">0</div><span>&#8381;</span></div>
+        <div id="downPaymentValue" class="value back_price">10%</div>
+      </div>
+        <input type="range" min="10" max="60" step="1" value="10" class="slider top" id="downPaymentSlider">
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="leaseTermSlider">Срок лизинга</label>
+      <div class="input-group">
+         <div class="teams_lizing_box"><div id="leaseTermValue" class="value">1</div><span>мес.</span></div>
+        <input type="range" min="1" max="60" step="1" value="1" class="slider" id="leaseTermSlider">
+        
+      </div>
+    </div>
+  </form>
+  <div class="output">
+      <div class="output-item">
+        <div class="label">Сумма договора лизинга:</div>
+        <div class="dollar"><div id="totalCostValue" class="value">0.00</div><span>&#8381;</span></div>
+      </div>
+      <div class="output-item">
+        <div class="label">Ежемесячный платеж от:</div>
+        <div class="dollar"><div id="monthlyPaymentValue" class="value">0.00</div><span>&#8381;</span></div>
+      </div>
+    <div class="button_section_item">
+      <button onclick="btn()" class="button_section">Оставить заявку</button>
+    </div>
+  </div>
+  
+</section>
+<div id="myModal" class="modal">
+  <div class="modal-content">
+    <span class="close_btn"><span class="close">&times;</span></span>
+    <form action="#">
+        <div class="forma_reg">
+          <div class="title_form">
+            <div class="title">Онлайн-заявка</div>
+            <span class="subtitle">Заполните форму, и мы вскоре свяжемся с вами, чтобы ответить на все вопросы</span>
+          </div>
+      <div class="box_contact">
+        <div class="phon_box">
+          <span class="tel">Телефон</span>
+          <input type="tel" id="phone" class="input" name="phone" required placeholder="+7 (___)-___-__-__">
+        </div>
+        <input type="text" id="name" class="input" name="name" required  placeholder="Имя">
+      </div>
+      <div class="box_sog">
+        <p>Нажимая на кнопку «Оставить заявку»,  я даю<br> согласие <span>на обработку персональных данных</span></p>
+        <div class="btn_fom"><button id="battun_form" type="submit">Оставить заявку</button></div>
+      </div>
+    </div>
+  </form>
+  <div class="box_icon">
+    <a target="_blank" href="#"><img data-src="/aseet/img/whatsapp.png" alt=""></a>
+    <a target="_blank" href="#"><img data-src="/aseet/img/telegramm.png" alt=""></a>
+  </div>
+  </div>
+</div>
+<div class="burger_menu">
+<div class="burger_menu_back"></div>
+<div class="burger_menu_panel">
+  <div onclick="closse()" class="close_menu_burger">&times;</div>
+  <nav class="menu">
+    <ul class="menu_item_burger">
+      <li class="menu_link"><a target="_blank" href="#">Лизинг</a></li>
+      <li class="menu_link"><a target="_blank" href="#">Каталог</a></li>
+      <li class="menu_link"><a target="_blank" href="#">О нас</a></li>
+    </ul>
+  </nav>
+ <button class="btn burger_btn">Оставить заявку</button>
+</div>
+</div>
+<script src="https://unpkg.com/imask"></script>
+<script src="index.js"></script>
+    
+</body>
+</html>
+
+
+
+    
+       
